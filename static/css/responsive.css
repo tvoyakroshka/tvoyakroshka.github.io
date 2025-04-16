@@ -1,0 +1,623 @@
+/*
+* Адаптивные стили для сайта эскорт-услуг
+* Автор: Твоя Крошка
+* Версия: 1.0.0
+*/
+
+/* ======= АДАПТИВНОСТЬ ДЛЯ РАЗНЫХ УСТРОЙСТВ ======= */
+
+/* Большие устройства (десктопы, менее 1200px) */
+@media (max-width: 1199.98px) {
+    .hero-text h1 {
+        font-size: 50px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 150px 0 100px;
+    }
+    
+    .about-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .about-counters {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .feature-item h4 {
+        font-size: 16px;
+    }
+    
+    .counter-number {
+        font-size: 36px;
+    }
+    
+    .service-card h3 {
+        font-size: 20px;
+    }
+    
+    .cta-text h2 {
+        font-size: 28px;
+    }
+}
+
+/* Средние устройства (таблетки, менее 992px) */
+@media (max-width: 991.98px) {
+    .hero-text h1 {
+        font-size: 42px;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .about-text h3 {
+        font-size: 30px;
+    }
+    
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .about-counters {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .counter-number {
+        font-size: 30px;
+    }
+    
+    .counter-text {
+        font-size: 12px;
+    }
+    
+    .testimonials-slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .service-card {
+        height: auto;
+    }
+    
+    .cta-inner {
+        padding: 30px;
+    }
+    
+    .cta-text h2 {
+        font-size: 24px;
+    }
+    
+    .cta-text p {
+        font-size: 16px;
+    }
+    
+    .footer {
+        padding: 60px 0 20px;
+    }
+    
+    .footer-inner {
+        margin-bottom: 40px;
+    }
+    
+    .hero-text-column, .hero-img-column {
+        margin-bottom: 40px;
+    }
+    
+    .navbar-dark .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    /* Анимации на планшетах могут быть менее интенсивными */
+    .animated {
+        animation-duration: 0.8s;
+    }
+}
+
+/* Малые устройства (ландшафтные телефоны, менее 768px) */
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 120px 0 80px;
+    }
+    
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .section-subtitle {
+        font-size: 16px;
+    }
+    
+    .about-img {
+        margin-bottom: 30px;
+    }
+    
+    .about-text h3 {
+        font-size: 26px;
+    }
+    
+    .about-features {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+    .feature-item {
+        padding: 15px;
+    }
+    
+    .about-counters {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    
+    .counter-item {
+        margin-bottom: 15px;
+    }
+    
+    .testimonials-slider {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .contact-details {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+    .contact-item {
+        margin-bottom: 20px;
+    }
+    
+    .cta-inner {
+        padding: 25px;
+    }
+    
+    .cta-text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .footer-inner .col-md-4 {
+        margin-bottom: 30px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .copyright {
+        margin-bottom: 10px;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    
+    .service-card {
+        padding: 20px;
+    }
+    
+    .accordion-button {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+    
+    .accordion-body {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    
+    /* Отключаем некоторые анимации на мобильных */
+    .animated.fadeInLeft, .animated.fadeInRight {
+        animation-name: fadeIn;
+    }
+}
+
+/* Очень малые устройства (портретные телефоны, менее 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    
+    .hero-text p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .section-padding {
+        padding: 50px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .section-subtitle {
+        font-size: 14px;
+    }
+    
+    .about-text h3 {
+        font-size: 22px;
+    }
+    
+    .about-text p {
+        font-size: 14px;
+    }
+    
+    .feature-item {
+        padding: 15px;
+    }
+    
+    .feature-item i {
+        font-size: 30px;
+    }
+    
+    .feature-item h4 {
+        font-size: 16px;
+    }
+    
+    .feature-item p {
+        font-size: 12px;
+    }
+    
+    .counter-number {
+        font-size: 26px;
+    }
+    
+    .counter-text {
+        font-size: 12px;
+    }
+    
+    .service-icon i {
+        font-size: 40px;
+    }
+    
+    .service-card h3 {
+        font-size: 18px;
+    }
+    
+    .service-card p {
+        font-size: 14px;
+    }
+    
+    .testimonial-text p {
+        font-size: 14px;
+    }
+    
+    .author-name {
+        font-size: 14px;
+    }
+    
+    .contact-info {
+        padding: 30px 20px;
+    }
+    
+    .contact-text p {
+        font-size: 14px;
+    }
+    
+    .contact-icon i {
+        font-size: 32px;
+    }
+    
+    .contact-info-text h3 {
+        font-size: 18px;
+    }
+    
+    .contact-info-text p {
+        font-size: 14px;
+    }
+    
+    .cta-inner {
+        padding: 20px;
+    }
+    
+    .cta-text h2 {
+        font-size: 20px;
+    }
+    
+    .cta-text p {
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 50px 0 20px;
+    }
+    
+    .footer-logo h3 {
+        font-size: 24px;
+    }
+    
+    .footer-nav h4, .footer-contact h4 {
+        font-size: 18px;
+    }
+    
+    .footer-nav ul li, .footer-contact p {
+        font-size: 14px;
+    }
+    
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .copyright p, .footer-policy p {
+        font-size: 12px;
+    }
+    
+    /* Подстраиваем размеры карточек для лучшего отображения на мобильных */
+    .gallery-item-inner {
+        height: 300px;
+    }
+    
+    .gallery-image-placeholder {
+        height: 100%;
+    }
+    
+    /* Фиксируем некоторые элементы для лучшей читаемости */
+    .service-price {
+        font-size: 16px;
+    }
+    
+    .service-price span {
+        font-size: 20px;
+    }
+    
+    /* Отключаем сложные анимации на мобильных */
+    .animated {
+        animation-duration: 0.5s;
+    }
+    
+    .cta-inner {
+        animation: none;
+    }
+    
+    .feature-item:hover,
+    .service-card:hover,
+    .gallery-item-inner:hover,
+    .testimonial-content:hover {
+        animation: none;
+        transform: none;
+    }
+}
+
+/* Корректировки для совсем маленьких экранов */
+@media (max-width: 359.98px) {
+    .hero-text h1 {
+        font-size: 26px;
+    }
+    
+    .section-title {
+        font-size: 22px;
+    }
+    
+    .about-text h3 {
+        font-size: 20px;
+    }
+    
+    .service-card h3 {
+        font-size: 16px;
+    }
+    
+    .btn {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    
+    .service-price span {
+        font-size: 18px;
+    }
+    
+    .contact-button-wrapper .btn {
+        width: 100%;
+    }
+    
+    /* Уменьшаем размеры для экономии места */
+    .section-padding {
+        padding: 40px 0;
+    }
+    
+    .feature-item,
+    .counter-item,
+    .service-card,
+    .testimonial-content,
+    .contact-item {
+        padding: 15px;
+    }
+}
+
+/* ======= СПЕЦИАЛЬНЫЕ СЛУЧАИ И КОРРЕКТИРОВКИ ======= */
+
+/* Исправление для Safari */
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .hero-text h1 span,
+        .service-icon i,
+        .contact-icon i {
+            color: var(--primary-color);
+            background: none;
+            -webkit-text-fill-color: initial;
+        }
+    }
+}
+
+/* Улучшения для ретина дисплеев */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+    .hero:before {
+        background-size: 50px 50px;
+    }
+}
+
+/* Исправления для веб-китов */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .gallery-item-inner::before {
+        content: "";
+        display: block;
+        padding-top: 125%;
+    }
+    
+    .gallery-image-placeholder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Исправления для Firefox */
+@-moz-document url-prefix() {
+    .hero-text h1 span,
+    .service-icon i,
+    .contact-icon i {
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+}
+
+/* Корректировки для устройств с ограниченными возможностями анимации */
+@media (prefers-reduced-motion: reduce) {
+    .animated {
+        animation: none !important;
+        transition: none !important;
+    }
+    
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Корректировки для темного режима */
+@media (prefers-color-scheme: dark) {
+    .header.sticky {
+        background: rgba(31, 20, 49, 0.95);
+    }
+    
+    .header.sticky .navbar-brand, 
+    .header.sticky .nav-link {
+        color: #fff;
+    }
+    
+    .accordion-button:not(.collapsed) {
+        color: #fff;
+    }
+    
+    .accordion-button {
+        background-color: #332244;
+        color: #fff;
+    }
+    
+    .accordion-body {
+        background-color: #332244;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+/* Обеспечение корректного отображения на портретных планшетах */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .hero {
+        height: auto;
+        padding: 150px 0 100px;
+    }
+    
+    .hero-text-column, .hero-img-column {
+        margin-bottom: 40px;
+    }
+    
+    .about-img-column {
+        margin-bottom: 40px;
+    }
+    
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Обеспечение корректного отображения на ландшафтных телефонах */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        padding: 100px 0 60px;
+    }
+    
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эскорт услуги премиум класса | Твоя Крошка</title>
+    <meta name="description" content="Эскорт услуги премиум класса в Москве. Индивидуальный подход, конфиденциальность и незабываемые впечатления.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем свои стили -->
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="stylesheet" href="./static/css/animations.css">
+    <link rel="stylesheet" href="./static/css/responsive.css">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <span class="loader"></span>
+            <h2 class="preloader-text">Загрузка<span class="dots">...</span></h2>
+        </div>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo-text" href="#">Твоя Крошка</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hero">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Обо мне</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Галерея</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">Контакты</a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a class="nav-link telegram-btn" href="https://t.me/tvoyakrosh" target="_blank">
+                                    <i class="fab fa-telegram-plane"></i> Telegram
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-none d-md-block">
+                            <a href="https://t.me/tvoyakrosh" class="telegram-btn" target="_blank">
+                                <i class="fab fa-telegram-plane"></i> Написать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной экран -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-text-column">
+                    <div class="hero-text animated fadeInLeft">
+                        <h1>Эскорт услуги <br><span>премиум класса</span></h1>
+                        <p>Я знаю как подарить тебе незабываемое удовольствие и создать атмосферу, в которой ты сможешь полностью расслабиться.</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-primary">Мои услуги</a>
+                            <a href="https://t.me/tvoyakrosh" class="btn btn-outline" target="_blank">Связаться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-img-column">
+                    <div class="hero-img animated fadeInRight">
+                        <!-- SVG заглушка для изображения -->
+                        <svg class="hero-image-placeholder" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff7eb3;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#bc66ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" rx="20" fill="url(#grad1)"/>
+                            <img src="image2.jpg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);" alt="Фотография" onerror="this.style.opacity = '0.5'; console.error('Ошибка загрузки изображения:', this.src)">
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="curved-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+                <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Раздел обо мне -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="section-subtitle">Познакомимся поближе</div>
+                <div class="title-divider"></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 about-img-column">
+                    <div class="about-img animated fadeInLeft">
+                        <!-- SVG заглушка для изображения -->
+                        <svg class="about-image-placeholder" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff66a3;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#a066ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" rx="20" fill="url(#grad2)"/>
+                            <img src="image.png" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);" alt="Фотография" onerror="this.style.opacity = '0.5'; console.error('Ошибка загрузки изображения:', this.src)">
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-7 about-text-column">
+                    <div class="about-text animated fadeInRight">
+                        <h3>Аня, <span>20 лет</span></h3>
+                        <p>Я профессиональная модель и спутница для особых мероприятий. Моя харизма, утонченные манеры и интеллект позволяют мне быть идеальной компаньонкой для светских раутов, деловых встреч и частных мероприятий.</p>
+                        <p>Я обладаю изысканным вкусом, знанием этикета и умею поддержать беседу на различные темы. Со мной вы будете чувствовать себя уверенно и комфортно в любой ситуации.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-crown"></i>
+                                <h4>Премиум сервис</h4>
+                                <p>Только индивидуальный подход и внимание к деталям</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-lock"></i>
+                                <h4>Конфиденциальность</h4>
+                                <p>Ваша приватность - мой главный приоритет</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-heart"></i>
+                                <h4>Незабываемый опыт</h4>
+                                <p>Создаю атмосферу, в которой вы расслабитесь</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-counters">
+                            <div class="counter-item">
+                                <div class="counter-number" data-count="5">0</div>
+                                <div class="counter-text">лет опыта</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-number" data-count="100">0</div>
+                                <div class="counter-text">довольных клиентов</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-number" data-count="15">0</div>
+                                <div class="counter-text">городов</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел услуг -->
+    <section id="services" class="services section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Мои услуги</h2>
+                <div class="section-subtitle">Выберите то, что вам нравится</div>
+                <div class="title-divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animated fadeInUp" data-delay="0.1s">
+                        <div class="service-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3>Сопровождение на мероприятия</h3>
+                        <p>Стану вашей спутницей на любом событии: деловая встреча, светский раут или частная вечеринка.</p>
+                        <div class="service-price">
+                            <span>от 30 000 ₽</span> / вечер
+                        </div>
+                        <a href="https://t.me/tvoyakrosh" class="btn btn-service" target="_blank">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animated fadeInUp" data-delay="0.2s">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Ужин в приятной компании</h3>
+                        <p>Романтический ужин с приятной беседой и продолжением вечера в более интимной обстановке.</p>
+                        <div class="service-price">
+                            <span>от 20 000 ₽</span> / 2 часа
+                        </div>
+                        <a href="https://t.me/tvoyakrosh" class="btn btn-service" target="_blank">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animated fadeInUp" data-delay="0.3s">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Сопровождение в поездках</h3>
+                        <p>Составлю компанию в деловых или развлекательных путешествиях по России и зарубежью.</p>
+                        <div class="service-price">
+                            <span>от 100 000 ₽</span> / сутки
+                        </div>
+                        <a href="https://t.me/tvoyakrosh" class="btn btn-service" target="_blank">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animated fadeInUp" data-delay="0.4s">
+                        <div class="service-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>Полный спектр услуг</h3>
+                        <p>Проведу с вами незабываемое время, включая интимные услуги. Индивидуальный подход к каждому клиенту.</p>
+                        <div class="service-price">
+                            <span>от 40 000 ₽</span> / 2 часа
+                        </div>
+                        <a href="https://t.me/tvoyakrosh" class="btn btn-service" target="_blank">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animated fadeInUp" data-delay="0.5s">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Эротический массаж</h3>
+                        <p>Профессиональный массаж с элементами эротического расслабления. Особая техника и чувственность.</p>
+                        <div class="service-price">
+                            <span>от 25 000 ₽</span> / сеанс
+                        </div>
+                        <a href="https://t.me/tvoyakrosh" class="btn btn-service" target="_blank">Забронировать</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card animated fadeInUp" data-delay="0.6s">
+                        <div class="service-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>VIP программа</h3>
+                        <p>Эксклюзивная программа для самых требовательных джентльменов. Полное вовлечение и максимум удовольствия.</p>
+                        <div class="service-price">
+                            <span>от 50 000 ₽</span> / 3 часа
+                        </div>
+                        <a href="https://t.me/tvoyakrosh" class="btn btn-service" target="_blank">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services-note text-center">
+                <p>* Все цены указаны ориентировочно и могут варьироваться в зависимости от индивидуальных пожеланий</p>
+                <a href="https://t.me/tvoyakrosh" class="btn btn-primary btn-lg" target="_blank">
+                    <i class="fab fa-telegram-plane"></i> Обсудить детали
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея фото -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Галерея</h2>
+                <div class="section-subtitle">Оцените мою красоту</div>
+                <div class="title-divider"></div>
+            </div>
+            <div class="row gallery-grid">
+                <!-- SVG заглушки для изображений галереи -->
+                <div class="col-md-4 col-sm-6 gallery-item animated fadeInUp" data-delay="0.1s">
+                    <div class="gallery-item-inner">
+                        <svg class="gallery-image-placeholder" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad_gallery1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff66a3;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#a066ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" rx="10" fill="url(#grad_gallery1)"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="22">Фото 1</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animated fadeInUp" data-delay="0.2s">
+                    <div class="gallery-item-inner">
+                        <svg class="gallery-image-placeholder" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad_gallery2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#f76aad;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#9d6dfc;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" rx="10" fill="url(#grad_gallery2)"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="22">Фото 2</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animated fadeInUp" data-delay="0.3s">
+                    <div class="gallery-item-inner">
+                        <svg class="gallery-image-placeholder" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad_gallery3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff5fa7;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#955fff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" rx="10" fill="url(#grad_gallery3)"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="22">Фото 3</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animated fadeInUp" data-delay="0.4s">
+                    <div class="gallery-item-inner">
+                        <svg class="gallery-image-placeholder" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad_gallery4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#fe54a1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8f51f4;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" rx="10" fill="url(#grad_gallery4)"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="22">Фото 4</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animated fadeInUp" data-delay="0.5s">
+                    <div class="gallery-item-inner">
+                        <svg class="gallery-image-placeholder" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad_gallery5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff4d9c;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8947eb;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" rx="10" fill="url(#grad_gallery5)"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="22">Фото 5</text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-item animated fadeInUp" data-delay="0.6s">
+                    <div class="gallery-item-inner">
+                        <svg class="gallery-image-placeholder" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad_gallery6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff4595;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#833fe1;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" rx="10" fill="url(#grad_gallery6)"/>
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="22">Фото 6</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-note text-center">
+                <p>* Все фотографии являются настоящими и проходят модерацию</p>
+                <a href="https://t.me/tvoyakrosh" class="btn btn-primary btn-lg" target="_blank">
+                    <i class="fab fa-telegram-plane"></i> Запросить больше фото
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы клиентов -->
+    <section id="testimonials" class="testimonials section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="section-subtitle">Что говорят мои клиенты</div>
+                <div class="title-divider"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"Татьяна - это сочетание внешней красоты и внутреннего шарма. Невероятно интересная собеседница, которая умеет слушать и поддержать любую тему. Деловая встреча прошла на высшем уровне благодаря ей."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Александр, 42</div>
+                            <div class="author-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"Потрясающая девушка с великолепной фигурой и манерами. Провели вместе несколько дней в Сочи, впечатления незабываемые! Обязательно обращусь к Татьяне снова."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Михаил, 38</div>
+                            <div class="author-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>"Искал компаньонку для посещения важного корпоративного мероприятия. Татьяна превзошла все ожидания: элегантна, умна, с прекрасными манерами. Коллеги были в восторге."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-name">Дмитрий, 45</div>
+                            <div class="author-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Часто задаваемые вопросы -->
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Вопросы и ответы</h2>
+                <div class="section-subtitle">Всё, что вы хотели узнать</div>
+                <div class="title-divider"></div>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Как забронировать встречу?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Для бронирования напишите мне в Telegram. Обсудим детали встречи, ваши пожелания и предпочтения. Я ценю конфиденциальность и с уважением отношусь к вашему личному пространству.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Какие формы оплаты вы принимаете?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Принимаю наличные в рублях и безналичные переводы на карту. Для заграничных поездок возможны другие формы оплаты, которые мы обсудим индивидуально. Всегда требуется предоплата.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Насколько конфиденциальны наши встречи?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Я гарантирую полную конфиденциальность всех встреч и общения. Ваша приватность - мой главный приоритет. Я никогда не раскрываю информацию о клиентах и ожидаю такого же отношения к себе.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Возможны ли поездки в другие города и страны?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, я с удовольствием составлю вам компанию в путешествиях по России и зарубежью. Имею действующий загранпаспорт и шенгенскую визу. Условия поездок обсуждаются индивидуально.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Какие мероприятия вы можете посетить?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Я готова сопровождать вас на деловых встречах, корпоративных мероприятиях, светских раутах, культурных событиях, ужинах и частных вечеринках. Я умею адаптироваться к любой обстановке и поддержать нужный имидж.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к действию (CTA) -->
+    <section id="cta" class="cta section-padding">
+        <div class="container">
+            <div class="cta-inner">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 cta-text">
+                        <h2>Готовы провести незабываемое время вместе?</h2>
+                        <p>Напишите мне прямо сейчас и давайте обсудим детали нашей встречи</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end text-center mt-4 mt-lg-0">
+                        <a href="https://t.me/tvoyakrosh" class="btn btn-telegram btn-lg" target="_blank">
+                            <i class="fab fa-telegram-plane"></i> Написать в Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Контакты</h2>
+                <div class="section-subtitle">Как со мной связаться</div>
+                <div class="title-divider"></div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-text text-center">
+                    <p>Лучший способ связаться со мной - написать в Telegram. Я отвечаю быстро и всегда открыта для общения.</p>
+                </div>
+                <div class="contact-button-wrapper text-center">
+                    <a href="https://t.me/tvoyakrosh" class="btn btn-telegram btn-lg" target="_blank">
+                        <i class="fab fa-telegram-plane"></i> @tvoyakrosh
+                    </a>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h3>Локация</h3>
+                            <p>Москва (центр) и область<br>Возможны выезды в другие города</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h3>Рабочие часы</h3>
+                            <p>Ежедневно с 12:00 до 02:00<br>Предварительная запись обязательна</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <h3>Важная информация</h3>
+                            <p>Встречаюсь только с мужчинами от 20 до 45 лет<br>Конфиденциальность гарантирована</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-logo">
+                            <h3>Твоя Крошка</h3>
+                            <p>Эскорт услуги премиум класса для истинных ценителей женской красоты и изысканного общения.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-nav">
+                            <h4>Навигация</h4>
+                            <ul>
+                                <li><a href="#hero">Главная</a></li>
+                                <li><a href="#about">Обо мне</a></li>
+                                <li><a href="#services">Услуги</a></li>
+                                <li><a href="#gallery">Галерея</a></li>
+                                <li><a href="#testimonials">Отзывы</a></li>
+                                <li><a href="#faq">Вопросы</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-contact">
+                            <h4>Связаться со мной</h4>
+                            <p><i class="fab fa-telegram-plane"></i> <a href="https://t.me/tvoyakrosh" target="_blank">@tvoyakrosh</a></p>
+                            <div class="footer-social">
+                                <a href="https://t.me/tvoyakrosh" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Все права защищены | Твоя Крошка</p>
+                </div>
+                <div class="footer-policy">
+                    <p>Сайт предназначен для лиц старше 18 лет</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка наверх -->
+    <a href="#" id="back-to-top" class="back-to-top" style="display: none;">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Подключаем скрипты -->
+    <script src="./static/js/main.js"></script>
+    <script src="./static/js/animations.js"></script>
+</body>
+</html>

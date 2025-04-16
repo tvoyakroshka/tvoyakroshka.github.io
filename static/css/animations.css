@@ -1,0 +1,594 @@
+/*
+* Анимации для сайта эскорт-услуг
+* Автор: Твоя Крошка
+* Версия: 1.0.0
+*/
+
+/* ======= ОСНОВНЫЕ АНИМАЦИИ ======= */
+
+/* FadeIn анимация */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* FadeInUp анимация */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FadeInDown анимация */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FadeInLeft анимация */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* FadeInRight анимация */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Pulse анимация */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Bounce анимация */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Rotate анимация */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Shine эффект для элементов */
+@keyframes shine {
+    from {
+        background-position: -200px;
+    }
+    to {
+        background-position: 200px;
+    }
+}
+
+/* Float анимация */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Flip анимация */
+@keyframes flip {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+    100% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
+
+/* Jello анимация */
+@keyframes jello {
+    0%, 11.1%, 100% {
+        transform: none;
+    }
+    22.2% {
+        transform: skewX(-12.5deg) skewY(-12.5deg);
+    }
+    33.3% {
+        transform: skewX(6.25deg) skewY(6.25deg);
+    }
+    44.4% {
+        transform: skewX(-3.125deg) skewY(-3.125deg);
+    }
+    55.5% {
+        transform: skewX(1.5625deg) skewY(1.5625deg);
+    }
+    66.6% {
+        transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    }
+    77.7% {
+        transform: skewX(0.390625deg) skewY(0.390625deg);
+    }
+    88.8% {
+        transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    }
+}
+
+/* HeartBeat анимация */
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(1.3);
+    }
+    28% {
+        transform: scale(1);
+    }
+    42% {
+        transform: scale(1.3);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+
+/* ZoomIn анимация */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* SlideInUp анимация */
+@keyframes slideInUp {
+    from {
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* SlideInDown анимация */
+@keyframes slideInDown {
+    from {
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* SlideInLeft анимация */
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* SlideInRight анимация */
+@keyframes slideInRight {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* BackInUp анимация */
+@keyframes backInUp {
+    0% {
+        transform: translateY(1200px) scale(0.7);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translateY(0px) scale(0.7);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ======= СПЕЦИАЛЬНЫЕ АНИМАЦИИ ======= */
+
+/* Анимация градиента */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Анимация для кнопок - эффект нажатия */
+@keyframes buttonPush {
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Анимация для прелоадера */
+@keyframes preloaderAnimation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 163, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 102, 163, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 163, 0);
+    }
+}
+
+/* Анимация для фотогалереи - эффект масштабирования */
+@keyframes galleryZoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Анимация для блоков с услугами - эффект парения */
+@keyframes serviceFloat {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.1);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.05);
+        transform: translatey(-10px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.1);
+        transform: translatey(0px);
+    }
+}
+
+/* Анимация для блоков с отзывами - эффект появления цитаты */
+@keyframes quoteAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Анимация для иконок в футере */
+@keyframes socialIconPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 163, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 102, 163, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 102, 163, 0);
+    }
+}
+
+/* Анимация для шапки сайта при прокрутке */
+@keyframes headerSlideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Анимация для линии под заголовками */
+@keyframes titleLineExpand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
+    }
+}
+
+/* Анимация для фона героя */
+@keyframes heroBgPan {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+/* Анимация для кнопки "наверх" */
+@keyframes backToTopBounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* ======= ПРИМЕНЕНИЕ АНИМАЦИЙ К ЭЛЕМЕНТАМ ======= */
+
+/* Применяем анимации к элементам при загрузке страницы */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Задержка для создания каскадного эффекта */
+[data-delay="0.1s"] {
+    animation-delay: 0.1s;
+}
+
+[data-delay="0.2s"] {
+    animation-delay: 0.2s;
+}
+
+[data-delay="0.3s"] {
+    animation-delay: 0.3s;
+}
+
+[data-delay="0.4s"] {
+    animation-delay: 0.4s;
+}
+
+[data-delay="0.5s"] {
+    animation-delay: 0.5s;
+}
+
+[data-delay="0.6s"] {
+    animation-delay: 0.6s;
+}
+
+/* Кнопка наверх */
+.back-to-top:hover {
+    animation: backToTopBounce 1s ease infinite;
+}
+
+/* Кнопки с эффектом нажатия */
+.btn:active {
+    animation: buttonPush 0.3s linear;
+}
+
+/* Анимация градиента для фона героя */
+.hero {
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Эффект парения для карточек услуг */
+.service-card:hover {
+    animation: serviceFloat 3s ease-in-out infinite;
+}
+
+/* Пульсирующая анимация для иконок в футере */
+.footer-social a:hover {
+    animation: socialIconPulse 1.5s infinite;
+}
+
+/* Стилизованная анимация для прелоадера */
+.preloader .loader {
+    animation: preloaderAnimation 1.5s infinite, spin 1s linear infinite;
+}
+
+/* Анимация для линии под заголовками */
+.section-header {
+    overflow: hidden;
+}
+
+.title-divider {
+    animation: titleLineExpand 1.5s ease-out forwards;
+}
+
+/* Анимация для галереи */
+.gallery-item-inner:hover svg {
+    animation: galleryZoom 8s ease infinite alternate;
+}
+
+/* Анимация для карточек с отзывами */
+.testimonial-content {
+    animation: quoteAppear 1s ease forwards;
+}
+
+/* Анимация для шапки при прокрутке */
+.header.sticky {
+    animation: headerSlideDown 0.5s ease forwards;
+}
+
+/* Анимация для кнопки CTA */
+.cta .btn:hover {
+    animation: pulse 1.5s infinite;
+}
+
+/* Анимация для счетчиков */
+.counter-number {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Анимация для FAQ аккордеона */
+.accordion-button:not(.collapsed) {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Анимация для контактных иконок */
+.contact-icon i {
+    animation: heartBeat 2s ease-in-out infinite;
+}
+
+/* Анимация для блоков с фичами */
+.feature-item:hover {
+    animation: jello 1s ease;
+}
+
+/* Анимация для героя */
+.hero-text h1 {
+    animation: fadeInLeft 1s ease forwards;
+}
+
+.hero-text p {
+    animation: fadeInLeft 1s ease 0.3s forwards;
+}
+
+.hero-buttons {
+    animation: fadeInLeft 1s ease 0.5s forwards;
+}
+
+.hero-img {
+    animation: fadeInRight 1s ease forwards;
+}
+
+/* Анимация для изображений в галерее */
+.gallery-item-inner:hover {
+    animation: pulse 2s infinite;
+}
+
+/* Анимированная кнопка Telegram */
+.btn-telegram:hover i {
+    animation: bounce 1s infinite;
+}
+
+/* Эффект для карточек отзывов */
+.testimonial-content:hover {
+    animation: pulse 1s ease infinite;
+}
+
+/* Эффект для заголовков в секциях */
+.section-title {
+    animation: fadeInDown 1s ease forwards;
+}
+
+/* Эффект для подзаголовков в секциях */
+.section-subtitle {
+    animation: fadeInUp 1s ease 0.3s forwards;
+}
+
+/* Эффект для элементов контактов */
+.contact-info {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Эффект для элементов в футере */
+.footer-logo, .footer-nav, .footer-contact {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Эффект для кнопки призыва к действию */
+.cta-inner {
+    animation: pulse 2s infinite;
+}
+
+/* Анимация для счетчиков */
+.counter-item {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Анимация для аккордеона FAQ */
+.accordion-item {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Анимация для всех секций при появлении в видимой области */
+.section-padding {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Класс для фейд-ин анимации */
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/* Класс для фейд-ин-ап анимации */
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* Класс для фейд-ин-даун анимации */
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+/* Класс для фейд-ин-лефт анимации */
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+/* Класс для фейд-ин-райт анимации */
+.fadeInRight {
+    animation-name: fadeInRight;
+}
